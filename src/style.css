@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    font-family: 'Robot0','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Sans Serif';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font: grayscale;
+}
+.carSection{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.carModal{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.carModal div{
+    font-size: 50px;
+    font-weight: bolder;
+    z-index: 0;
+}
+.carModal p{
+    font-weight: bolder;
+}
+.buttongrp{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+
+.buttongrp button{
+    width: 300px;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    z-index: 1;
+    margin: 1rem;
+    cursor: pointer;
+}
+.rightMenu{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color:black;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+.mobile{
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    width: 256px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.closebtn{
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+
+}
+.mobile a{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width:768px) {
+    .mainMenu{
+        display: none;
+    }    
+    .righttwo{
+        display: none;
+    }
+}
